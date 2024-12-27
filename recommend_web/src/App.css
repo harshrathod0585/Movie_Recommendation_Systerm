@@ -1,0 +1,119 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Transparent header style */
+.App-header {
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+  padding: 20px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar heading */
+.navbar h1 {
+  margin: 0;
+}
+
+/* Container for all movies */
+.movie-list {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Grid layout for movies */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  width: 90%;
+}
+
+/* Styling for each movie card */
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.movie-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling for the selected movie section */
+.selected-movie {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected-movie img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Similar movie list grid */
+.similar-movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Styling for the background image to appear */
+.App {
+  background-image: url('https://media.licdn.com/dms/image/D5612AQGy6sM0SJAdxg/article-cover_image-shrink_720_1280/0/1693150322893?e=2147483647&v=beta&t=tmyCkhGahTKcBOOftyXZLhkLjtUIkqio94iGE3Y670E');  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Make sure the header is visible over the background image */
+.movie-recommendation-heading {
+  background-color: rgba(0, 0, 0, 0); /* Transparent background for header */
+  padding: 10px;
+  text-align: center;
+}
+
+.movie-recommendation-heading h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+}
+
+.movie-recommendation-heading h1::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 50px;
+  background-color: #ff6a00;
+  margin: 10px auto 0;
+}
